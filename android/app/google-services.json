@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "865266377935",
+    "project_id": "lionsbot-test",
+    "storage_bucket": "lionsbot-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865266377935:android:ab0995536cb7a006b543ba",
+        "android_client_info": {
+          "package_name": "com.example.lionsbot_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865266377935-n740fp4u62lfmc66pvuha7o0ur4d2lr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk70SF7DkskfEnSbz2rmp0B3VUtoqYfgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865266377935-n740fp4u62lfmc66pvuha7o0ur4d2lr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
