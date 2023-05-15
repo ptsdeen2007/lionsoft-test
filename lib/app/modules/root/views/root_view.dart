@@ -27,12 +27,12 @@ class RootView extends GetView<RootController> {
                       icon: Icon(Icons.account_circle_outlined),
                       label: 'Profile',
                     ),
-                    BottomNavigationBarItem(
+               /*     BottomNavigationBarItem(
                       icon: Icon(Icons.message),
                       label: 'Search',
-                    ),
+                    ),*/
                     BottomNavigationBarItem(
-                      icon: Icon(Icons.settings),
+                      icon: Icon(Icons.settings_remote_outlined),
                       label: 'Settings',
                     ),
                   ],
