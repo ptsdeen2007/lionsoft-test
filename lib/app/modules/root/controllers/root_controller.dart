@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:lionsbot_task/app/routes/app_pages.dart';
 
 class RootController extends GetxController {
   //TODO: Implement RootController
@@ -19,6 +20,10 @@ class RootController extends GetxController {
     super.onClose();
   }
   void chagePage(int pageIndex){
+    if(pageIndex==1){
+      Get.toNamed(Routes.REMOTE);
+      return;
+    }
     currentPage.value=pageIndex;
   }
 

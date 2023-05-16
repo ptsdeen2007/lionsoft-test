@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
 
 class RemoteController extends GetxController {
-  //TODO: Implement RemoteController
+  var waterSwich=true.obs;
+  var brushSwich=false.obs;
+  var isStarted=false.obs;
 
-  final count = 0.obs;
+  var sliderValue=1.0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -19,5 +21,22 @@ class RemoteController extends GetxController {
     super.onClose();
   }
 
-  void increment() => count.value++;
+  navigatBack() {
+    Get.back();
+  }
+
+  void watterSwichPressed(bool value) {
+    waterSwich.toggle();
+  }
+  void brushSwichPressed(bool value) {
+    brushSwich.toggle();
+  }
+
+  void changeState() {
+    isStarted.toggle();
+  }
+
+  void chageSlider(double value) {
+    sliderValue.value=value;
+  }
 }

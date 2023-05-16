@@ -33,7 +33,7 @@ class RootView extends GetView<RootController> {
                     ),*/
                     BottomNavigationBarItem(
                       icon: Icon(Icons.settings_remote_outlined),
-                      label: 'Settings',
+                      label: 'Remote',
                     ),
                   ],
                   currentIndex: controller.currentPage.value,
