@@ -107,8 +107,8 @@ class RemoteView extends GetView<RemoteController> {
                     ),
                     style: ElevatedButton.styleFrom(
                         backgroundColor: controller.isStarted.value
-                            ? Colors.red
-                            : Colors.lightBlue),
+                            ? AppColors.red
+                            : AppColors.blue),
                   )),
               Expanded(
                 child: DraggableScrollableSheet(
@@ -125,7 +125,7 @@ class RemoteView extends GetView<RemoteController> {
                               topRight: Radius.circular(18),
                               topLeft: Radius.circular(18),
                             ),
-                            color: Colors.lightBlue),
+                            color: AppColors.blue),
                         child: Obx(() {
                           return Column(
                             children: [
@@ -156,7 +156,7 @@ class RemoteView extends GetView<RemoteController> {
                                 alignment: Alignment.bottomLeft,
                               ),
                               Slider(
-                                activeColor: Colors.blueAccent,
+                                activeColor: AppColors.sliderBlue,
                                 inactiveColor: Colors.white,
                                 thumbColor: Colors.white,
                                 value: controller.sliderValue.value,

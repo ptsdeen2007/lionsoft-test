@@ -39,7 +39,7 @@ class LoginView extends StatelessWidget {
                             TextFormField(
                                 controller: controller.tecUserName,
                                 decoration: InputDecoration(
-                                  labelText: "Email",
+                                  hintText: "Email",
                                   filled: true,
                                   border: textFieldBorder,
                                   fillColor: Colors.white,
@@ -54,7 +54,7 @@ class LoginView extends StatelessWidget {
                             TextFormField(
                                 controller: controller.tecPassword,
                                 decoration: InputDecoration(
-                                    labelText: "Password",
+                                    hintText: "Password",
                                     filled: true,
                                     border: textFieldBorder,
                                     fillColor: Colors.white,
@@ -78,9 +78,12 @@ class LoginView extends StatelessWidget {
                           ],
                         )),
                   ),
+                  Text("user aname : lionsbot@test.com",style: TextStyle(color: Colors.white),),
+                  Text("password : Test@123",style: TextStyle(color: Colors.white),),
                   SizedBox(
                     height: 20,
                   ),
+
                   FractionallySizedBox(
                     widthFactor: 1,
                     child: ElevatedButton(

@@ -10,8 +10,8 @@ class LoginController extends GetxController {
 
   @override
   void onInit() {
-    tecUserName.text="lionsbot@test.com";
-    tecPassword.text="Test@123";
+    // tecUserName.text="lionsbot@test.com";
+    // tecPassword.text="Test@123";
     super.onInit();
   }
 
@@ -27,8 +27,13 @@ class LoginController extends GetxController {
   Future<void> loginWidhUserNameAndPassword() async {
     print("Triggered");
     if(formKey.currentState!.validate()){
-     var user= await  FirebaseAuth.instance.signInWithEmailAndPassword(email: tecUserName.text, password: tecPassword.text);
-     print(user.user);
+     try {
+       var user= await  FirebaseAuth.instance.signInWithEmailAndPassword(email: tecUserName.text.trim(), password: tecPassword.text.trim());
+      formKey.currentState!.reset();
+     } catch (e) {
+       Get.snackbar("Error", "Incorrect User name or password",snackPosition: SnackPosition.BOTTOM);
+     }
+
     }
   }
 

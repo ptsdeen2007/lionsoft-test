@@ -32,7 +32,7 @@ class ProfileView extends StatelessWidget {
                       children: [
                         InkWell(
                           onTap: () {
-                            Get.snackbar("Warning", "Not integrated");
+                            Get.snackbar("Warning", "Not integrated",snackPosition: SnackPosition.BOTTOM);
                           },
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),

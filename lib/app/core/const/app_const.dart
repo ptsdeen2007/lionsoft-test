@@ -28,3 +28,10 @@ List<PontsModel> pointsModels = [
   PontsModel("Cleaning Spree", "+50 Points for using the robot daily!"),
   PontsModel("Welcome Reward", "+20 Points to kickstart your journey with us."),
 ];
+
+class AppColors{
+ static Color blue=Color(0xff208fe0);
+ static Color red=Color(0xffe74c4b);
+ static Color sliderBlue=Color(0xff2474e9);
+
+}
